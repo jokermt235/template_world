@@ -1,0 +1,22 @@
+.welcome{
+    text-align: center;
+    font-size:40px;
+    font-weight:bolder;
+    padding:20%;
+    color:white;
+
+}
+.gradient{
+     /* can be treated like a fallback */
+    background-color: darkblue;
+
+    /* will be "on top", if browser supports it */
+    background-image: linear-gradient(black, darkblue);
+
+    /* these will reset other properties, like background-position, but it does know what you mean */
+    background: darkblue;
+    background: linear-gradient(black, darkblue);
+}
+.backgrd{
+    background-image : url("img/bg.png") !important;
+}
