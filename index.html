@@ -15,7 +15,11 @@
             $('.special.cards .image').dimmer({
                 on: 'hover'
             });
+
         });
+        function showModal(){
+            $('.ui.basic.modal').modal('show');
+        }
     </script>
 </head>
 <body>
@@ -90,7 +94,7 @@
                         <div class="ui dimmer">
                             <div class="content">
                                 <div class="center">
-                                    <div class="ui black inverted button">See more</div>
+                                    <div onclick="showModal()" class="ui black inverted button">See more</div>
                                 </div>
                             </div>
                         </div>
