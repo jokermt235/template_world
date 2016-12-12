@@ -15,6 +15,7 @@
             $('.special.cards .image').dimmer({
                 on: 'hover'
             });
+            $('.ui.radio.checkbox').checkbox();
 
         });
         function showModal(){
@@ -25,12 +26,109 @@
 <body>
     <div class="ui basic modal">
         <i class="close icon"></i>
-        <div class="header">
-            Test modal
+        <div class="header backgrd">
+            First template
+        </div>
+        <div class="row">
+            <div class="ui segment">
+                <div class="ui header">
+                    <i class="huge laptop icon"></i>
+                    DESKTOP
+                </div>
+                <div class="ui inverted divider">
+                </div>
+                <div class="ui image">
+                    <img src="img/desktop_emul.png">
+                </div>
+            </div>
+            <div class="ui two column grid">
+                <div class="column">
+                    <div class="ui segment">
+                        <div class="ui header">
+                            <i class="huge mobile icon"></i>
+                            MOBILE
+                        </div>
+                        <div class="ui inverted divider"> 
+                        </div>
+                        <div class="ui image">
+                            <img src="img/mobile_phone_emul.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="ui segment">
+                        <div class="ui header">
+                            Instructions
+                        </div>
+                        <div class="ui inverted divider"> 
+                        </div>
+                        <div class="ui icon message">
+                            <i class="info orange icon"></i>
+                            <div class="content">
+                                <div class="header">
+                                    Read information before start?
+                                </div>
+                                <p>
+                                    Hello this is template both mobile and desktop
+                                    If you need only frontend content of this template
+                                </p>
+                            </div>
+                        </div>
+                        <form class="ui form">
+                            <div class="ui two column grid">
+                                <div class="column">
+                                    <div class="ui header">Select payment type</div>
+                                    <div class="ui divider"></div>
+                                    <div class="grouped fields">
+                                        <div class="field">
+                                            <div class="ui radio checkbox">
+                                                <input type="radio" name="fruit" checked="" tabindex="0" class="hidden">
+                                                <label>
+                                                    <i class="huge visa blue icon"></i>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <div class="ui radio checkbox">
+                                                <input type="radio" name="fruit" checked="" tabindex="0" class="hidden">
+                                                <label>
+                                                    <i class="huge paypal card icon blue icon"></i>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <div class="ui radio checkbox">
+                                                <input type="radio" name="fruit" checked="" tabindex="0" class="hidden">
+                                                <label>
+                                                    <i class="huge mastercard icon red icon"></i>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="field"> 
+                                            <div class="ui inverted  black backgrd button">
+                                            <i class="large shop bag icon"></i>
+                                                Buy full template
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="ui header">Download free CSS</div>
+                                    <div class="ui divider"></div>
+                                    <div class="ui inverted black backgrd button">
+                                        <i class="large download icon"></i>
+                                        Download Free CSS
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="ui text container">
-        <div  class="ui inverted borderless main menu fixed">
+    <div class="ui text container ">
+        <div  class="ui huge inverted backgrd borderless main menu fixed">
             <a class="header item">
                 SIMPLETMP.COM
             </a>
@@ -94,7 +192,7 @@
                         <div class="ui dimmer">
                             <div class="content">
                                 <div class="center">
-                                    <div onclick="showModal()" class="ui black inverted button">See more</div>
+                                    <div onclick="showModal()" class="ui black backgrd inverted button">See more</div>
                                 </div>
                             </div>
                         </div>
@@ -124,52 +222,31 @@
                         </span>
                     </div>
                     <div class="ui two buttons">
-                        <div class="ui basic blue button">
+                        <div class="ui inverted black  backgrd button">
                             <i class="large shop bag icon"></i>
                             Buy full
                         </div>
-                        <div class="ui basic green button">
+                        <div class="ui inverted black backgrd button">
                             <i class="large download icon"></i>
                             Free CSS
                         </div>
                     </div>
                 </div>
                 <div class="card">
-                    <div class="image">
-                        <img src="img/image.png">
-                    </div>
-                    <div class="content">
-                        <a class="header">Car shop</a>
-                        <div class="description">
-                            Helps u to sale more phones
+                    <div class="blurring dimmable image">
+                        <div class="ui dimmer">
+                            <div class="content">
+                                <div class="center">
+                                    <div onclick="showModal()" class="ui black backgrd inverted button">See more</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui  middle  image">
+                            <img src="img/image.png">
                         </div>
                     </div>
-                    <div class="extra content">
-                        <span class="left floated">
-                            <i class="large money green icon"></i>
-                            20$
-                        </span>
-                        <span class="right floated">
-                            <div class="ui star rating" data-rating="4">
-                                <i class="icon active"></i>
-                                <i class="icon active"></i>
-                                <i class="icon active"></i>
-                                <i class="icon active"></i>
-                                <i class="icon active"></i>
-                            </div>
-                        </span>
-                    </div>
-                    <div class="ui blue  bottom attached button">
-                        <i class="shop icon"></i>
-                        Buy now
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="ui middle image">
-                        <img src="img/image.png">
-                    </div>
                     <div class="content">
-                        <a class="header">Health</a>
+                        <a class="header">Phone shop</a>
                         <div class="description">
                             Helps u to sale more phones
                         </div>
@@ -189,47 +266,32 @@
                             </div>
                         </span>
                     </div>
-                    <div class="ui blue  bottom attached button">
-                        <i class="shop icon"></i>
-                        Buy now
+                    <div class="ui two buttons">
+                        <div class="ui inverted black  backgrd button">
+                            <i class="large shop bag icon"></i>
+                            Buy full
+                        </div>
+                        <div class="ui inverted black backgrd button">
+                            <i class="large download icon"></i>
+                            Free CSS
+                        </div>
                     </div>
                 </div>
                 <div class="card">
-                    <div class="image">
-                        <img src="img/image.png">
-                    </div>
-                    <div class="content">
-                        <a class="header">Education</a>
-                        <div class="description">
-                            Helps u to sale more phones
-                        </div>    
-                    </div>
-                    <div class="extra content">
-                        <span class="left floated">
-                            <i class="large money green icon"></i>
-                            30$
-                        </span>
-                        <span class="right floated">
-                            <div class="ui star rating" data-rating="4">
-                                <i class="icon active"></i>
-                                <i class="icon active"></i>
-                                <i class="icon active"></i>
-                                <i class="icon"></i>
-                                <i class="icon"></i>
+                    <div class="blurring dimmable image">
+                        <div class="ui dimmer">
+                            <div class="content">
+                                <div class="center">
+                                    <div onclick="showModal()" class="ui black backgrd inverted button">See more</div>
+                                </div>
                             </div>
-                        </span>
-                    </div>
-                    <div class="ui blue  bottom attached button">
-                        <i class="shop icon"></i>
-                        Buy now
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="ui middle image">
-                        <img src="img/image.png">
+                        </div>
+                        <div class="ui  middle  image">
+                            <img src="img/image.png">
+                        </div>
                     </div>
                     <div class="content">
-                        <a class="header">Cloth</a>
+                        <a class="header">Phone shop</a>
                         <div class="description">
                             Helps u to sale more phones
                         </div>
@@ -249,47 +311,32 @@
                             </div>
                         </span>
                     </div>
-                    <div class="ui blue  bottom attached button">
-                        <i class="shop icon"></i>
-                        Buy now
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="image">
-                        <img src="img/image.png">
-                    </div>
-                     <div class="content">
-                        <a class="header">Rest</a>
-                        <div class="description">
-                            Helps u to sale more phones
+                    <div class="ui two buttons">
+                        <div class="ui inverted black  backgrd button">
+                            <i class="large shop bag icon"></i>
+                            Buy full
+                        </div>
+                        <div class="ui inverted black backgrd button">
+                            <i class="large download icon"></i>
+                            Free CSS
                         </div>
                     </div>
-                    <div class="extra content">
-                        <span class="left floated">
-                            <i class="large money green icon"></i>
-                            30$
-                        </span>
-                        <span class="right floated">
-                            <div class="ui star rating" data-rating="4">
-                                <i class="icon active"></i>
-                                <i class="icon active"></i>
-                                <i class="icon active"></i>
-                                <i class="icon"></i>
-                                <i class="icon"></i>
-                            </div>
-                        </span>
-                    </div>
-                    <div class="ui blue  bottom attached button">
-                        <i class="shop icon"></i>
-                        Buy now
-                    </div>
                 </div>
                 <div class="card">
-                    <div class="ui middle image">
-                        <img src="img/image.png">
+                    <div class="blurring dimmable image">
+                        <div class="ui dimmer">
+                            <div class="content">
+                                <div class="center">
+                                    <div onclick="showModal()" class="ui black backgrd inverted button">See more</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui  middle  image">
+                            <img src="img/image.png">
+                        </div>
                     </div>
                     <div class="content">
-                        <a class="header">Cariers</a>
+                        <a class="header">Phone shop</a>
                         <div class="description">
                             Helps u to sale more phones
                         </div>
@@ -309,17 +356,32 @@
                             </div>
                         </span>
                     </div>
-                    <div class="ui blue  bottom attached button">
-                        <i class="shop icon"></i>
-                        Buy now
+                    <div class="ui two buttons">
+                        <div class="ui inverted black  backgrd button">
+                            <i class="large shop bag icon"></i>
+                            Buy full
+                        </div>
+                        <div class="ui inverted black backgrd button">
+                            <i class="large download icon"></i>
+                            Free CSS
+                        </div>
                     </div>
                 </div>
                 <div class="card">
-                    <div class="image">
-                        <img src="img/image.png">
+                    <div class="blurring dimmable image">
+                        <div class="ui dimmer">
+                            <div class="content">
+                                <div class="center">
+                                    <div onclick="showModal()" class="ui black backgrd inverted button">See more</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui  middle  image">
+                            <img src="img/image.png">
+                        </div>
                     </div>
                     <div class="content">
-                        <a class="header">Fashion</a>
+                        <a class="header">Phone shop</a>
                         <div class="description">
                             Helps u to sale more phones
                         </div>
@@ -339,9 +401,105 @@
                             </div>
                         </span>
                     </div>
-                    <div class="ui blue  bottom attached button">
-                        <i class="shop icon"></i>
-                        Buy now
+                    <div class="ui two buttons">
+                        <div class="ui inverted black  backgrd button">
+                            <i class="large shop bag icon"></i>
+                            Buy full
+                        </div>
+                        <div class="ui inverted black backgrd button">
+                            <i class="large download icon"></i>
+                            Free CSS
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="blurring dimmable image">
+                        <div class="ui dimmer">
+                            <div class="content">
+                                <div class="center">
+                                    <div onclick="showModal()" class="ui black backgrd inverted button">See more</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui  middle  image">
+                            <img src="img/image.png">
+                        </div>
+                    </div>
+                    <div class="content">
+                        <a class="header">Phone shop</a>
+                        <div class="description">
+                            Helps u to sale more phones
+                        </div>
+                    </div>
+                    <div class="extra content">
+                        <span class="left floated">
+                            <i class="large money green icon"></i>
+                            30$
+                        </span>
+                        <span class="right floated">
+                            <div class="ui star rating" data-rating="4">
+                                <i class="icon active"></i>
+                                <i class="icon active"></i>
+                                <i class="icon active"></i>
+                                <i class="icon"></i>
+                                <i class="icon"></i>
+                            </div>
+                        </span>
+                    </div>
+                    <div class="ui two buttons">
+                        <div class="ui inverted black  backgrd button">
+                            <i class="large shop bag icon"></i>
+                            Buy full
+                        </div>
+                        <div class="ui inverted black backgrd button">
+                            <i class="large download icon"></i>
+                            Free CSS
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="blurring dimmable image">
+                        <div class="ui dimmer">
+                            <div class="content">
+                                <div class="center">
+                                    <div onclick="showModal()" class="ui black backgrd inverted button">See more</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui  middle  image">
+                            <img src="img/image.png">
+                        </div>
+                    </div>
+                    <div class="content">
+                        <a class="header">Phone shop</a>
+                        <div class="description">
+                            Helps u to sale more phones
+                        </div>
+                    </div>
+                    <div class="extra content">
+                        <span class="left floated">
+                            <i class="large money green icon"></i>
+                            30$
+                        </span>
+                        <span class="right floated">
+                            <div class="ui star rating" data-rating="4">
+                                <i class="icon active"></i>
+                                <i class="icon active"></i>
+                                <i class="icon active"></i>
+                                <i class="icon"></i>
+                                <i class="icon"></i>
+                            </div>
+                        </span>
+                    </div>
+                    <div class="ui two buttons">
+                        <div class="ui inverted black  backgrd button">
+                            <i class="large shop bag icon"></i>
+                            Buy full
+                        </div>
+                        <div class="ui inverted black backgrd button">
+                            <i class="large download icon"></i>
+                            Free CSS
+                        </div>
                     </div>
                 </div>
             </div>
