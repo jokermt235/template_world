@@ -22,12 +22,26 @@
 
         });
         function showModal(){
-            $('.ui.basic.modal').modal('show');
+            $('#emul').modal('show');
+        }
+        function showUserModal(){
+            $('#user').modal('show');
         }
     </script>
 </head>
 <body>
-    <div class="ui basic modal">
+    <div class="ui basic modal" id="user" >
+        <i class="close icon"></i>
+        <div class="header backgrd">
+            <i class="large settings icon"></i>
+            Settings
+        </div>
+        <div class="row">
+            <div class="ui segment">
+            </div>
+        </div>
+    </div>
+    <div class="ui basic modal" id="emul">
         <i class="close icon"></i>
         <div class="header backgrd">
             First template
@@ -102,7 +116,24 @@
                                         <div class="field">
                                             <div class="ui radio checkbox">
                                                 <input type="radio" name="fruit" checked="" tabindex="0" class="hidden">
-                                                <label>
+                                       <div class="ui vertical menu">
+                        <a class="item">
+                            <i class="huge ru flag"></i>
+                            Русский
+                        </a>
+                        <a class="item">
+                            <i class="huge us flag"></i>
+                            English
+                        </a>
+                        <a class="item">
+                            <i class="huge fr flag"></i> 
+                            Français
+                        </a>
+                        <a class="item">
+                            <i class="huge de flag"></i>
+                            Deutsch
+                        </a>
+                    </div>         <label>
                                                     <i class="huge mastercard icon red icon"></i>
                                                 </label>
                                             </div>
@@ -160,8 +191,23 @@
                     </div>
                 </div>
                 <div class="ui dropdown item">
-                    <i class="large green user icon"></i>
-                    User
+                    <i class="large user icon"></i>
+                        Username
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <a class="item">
+                            <i class="huge shop bag icon"></i>
+                            <div class="ui red left pointing label">0</div>
+                        </a>
+                        <a class="item" onclick="showUserModal()">
+                            <i class="huge settings icon"></i>
+                            User settings
+                        </a>
+                        <a class="item">
+                            <i class="huge sign out icon"></i> 
+                            Logout
+                        </a>
+                    </div>        
                 </div>
             </div>
         </div>
