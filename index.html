@@ -17,6 +17,9 @@
             });
             $('.ui.radio.checkbox').checkbox();
 
+            //show dropdown on hover
+            $('.main.menu  .ui.dropdown').dropdown({ on: 'hover'});
+
         });
         function showModal(){
             $('.ui.basic.modal').modal('show');
@@ -127,11 +130,40 @@
             </div>
         </div>
     </div>
-    <div class="ui text container ">
-        <div  class="ui huge inverted backgrd borderless main menu fixed">
+    <div class="ui container">
+        <div  class="ui huge fixed main top menu">
             <a class="header item">
                 SIMPLETMP.COM
             </a>
+            <div class="right menu">
+                <div class="ui dropdown item">
+                    <i class="large blue world icon"></i>
+                    English
+                    <i class="dropdown icon"></i>
+                    <div class="ui vertical menu">
+                        <a class="item">
+                            <i class="huge ru flag"></i>
+                            Русский
+                        </a>
+                        <a class="item">
+                            <i class="huge us flag"></i>
+                            English
+                        </a>
+                        <a class="item">
+                            <i class="huge fr flag"></i> 
+                            Français
+                        </a>
+                        <a class="item">
+                            <i class="huge de flag"></i>
+                            Deutsch
+                        </a>
+                    </div>
+                </div>
+                <div class="ui dropdown item">
+                    <i class="large green user icon"></i>
+                    User
+                </div>
+            </div>
         </div>
     </div>
     <div class="row">
@@ -209,7 +241,7 @@
                     <div class="extra content">
                         <span class="left floated">
                             <i class="large money green icon"></i>
-                            30$
+                            <b>30$</b>
                         </span>
                         <span class="right floated">
                             <div class="ui star rating" data-rating="4">
@@ -254,7 +286,7 @@
                     <div class="extra content">
                         <span class="left floated">
                             <i class="large money green icon"></i>
-                            30$
+                            <b>30$</b>
                         </span>
                         <span class="right floated">
                             <div class="ui star rating" data-rating="4">
@@ -299,7 +331,7 @@
                     <div class="extra content">
                         <span class="left floated">
                             <i class="large money green icon"></i>
-                            30$
+                            <b>30$</b>
                         </span>
                         <span class="right floated">
                             <div class="ui star rating" data-rating="4">
@@ -344,7 +376,7 @@
                     <div class="extra content">
                         <span class="left floated">
                             <i class="large money green icon"></i>
-                            30$
+                            <b>30$</b>
                         </span>
                         <span class="right floated">
                             <div class="ui star rating" data-rating="4">
@@ -389,7 +421,7 @@
                     <div class="extra content">
                         <span class="left floated">
                             <i class="large money green icon"></i>
-                            30$
+                            <b>30$</b>
                         </span>
                         <span class="right floated">
                             <div class="ui star rating" data-rating="4">
