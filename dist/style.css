@@ -4,18 +4,19 @@
     font-weight:bolder;
     padding:15%;
     color:white;
+    font-family: sans-serif;
 
 }
 .gradient{
      /* can be treated like a fallback */
-    background-color: darkblue;
+    background-image: url("img/big_bg.jpg");
 
     /* will be "on top", if browser supports it */
-    background-image: linear-gradient(black, darkblue);
+    /*background-image: linear-gradient(white, black);*/
 
     /* these will reset other properties, like background-position, but it does know what you mean */
-    background: darkblue;
-    background: linear-gradient(black, darkblue);
+    /*background: black;*/
+    /*background: linear-gradient(white, black);*/
 }
 .backgrd{
     background-image : url("img/bg.png") !important;
